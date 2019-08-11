@@ -1,0 +1,53 @@
+#Shop {
+  margin: 50px 0; }
+
+.ShopCategory {
+  background: #5c5a5a;
+  width: 400px;
+  border-radius: 40px; }
+  .ShopCategory .CategoryText i {
+    color: #e7c14e; }
+  .ShopCategory .CategoryText h4 {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px 0; }
+  .ShopCategory .CategoryText h5 {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 0; }
+  .ShopCategory .CategoryText a {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white; }
+    .ShopCategory .CategoryText a:hover {
+      color: #e7c14e;
+      transition: .2s ease; }
+  .ShopCategory .CategoryText li {
+    padding: 10px 0; }
+
+.shopImg {
+  border: 1px solid #e7c14e;
+  width: 200px;
+  min-height: 450px;
+  margin-left: 50px;
+  background: white; }
+  .shopImg .shop-img {
+    width: 100%;
+    height: 100%; }
+  .shopImg .img-text {
+    text-align: center;
+    padding: 2.0em 1em; }
+    .shopImg .img-text h6 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold; }
+    .shopImg .img-text p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 20px; }
+    .shopImg .img-text button {
+      color: white; }
+
+/*# sourceMappingURL=shop.css.map */
