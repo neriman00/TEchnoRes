@@ -157,16 +157,18 @@ $(document).ready(function(){
     })
 })
 
-$(".two-menu").click(function(){
-    $(".menu-vertical").toggleClass("open");
-});
 
 
 
-$(".menu-a").click(function(){
-    $(this).addClass("active-menu").siblings().removeClass("active-menu");
-})
 
+$(document).ready(function(){
+    $(".two-menu").mouseover(function(){
+      $(".menu-vertical").css("opacity", "1");
+    });
+    $(".all-menu").mouseout(function(){
+      $(".menu-vertical").css("opacity", "0");
+    });
+  });
 
 $(document).ready(mySlider);
 
