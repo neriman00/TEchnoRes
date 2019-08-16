@@ -142,10 +142,26 @@ Header
   color: #fff; }
 
 .menu-a {
-  font-weight: 700; }
-
-.active-menu {
-  color: #ffc107 !important; }
+  font-weight: 700;
+  position: relative; }
+  .menu-a .active {
+    background: #ffc107;
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  .menu-a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transition: width 0.3s;
+    background: #ffc107;
+    width: 0px; }
+  .menu-a:hover::before {
+    width: 50%; }
 
 .header-yel {
   background: #ffc107; }
@@ -175,7 +191,7 @@ Header
     border: none;
     box-shadow: none; }
   .header-yel .menu-vertical {
-    opacity: 0;
+    display: none;
     position: absolute;
     top: auto;
     left: 15px;
@@ -498,7 +514,7 @@ End of the Services
   float: right;
   padding: 15px 30px;
   font-weight: bold;
-  transition: ease .3s; }
+  transition: transform .3s; }
   .question .question-btn:hover {
     transform: translateY(-1px);
     box-shadow: 2px 5px 10px #111; }
@@ -537,7 +553,7 @@ footer {
     padding: 0; }
     footer .footer-links ul li {
       list-style: none;
-      transition: .3s; }
+      transition: transform  .3s; }
       footer .footer-links ul li:hover {
         transform: translateX(2px); }
       footer .footer-links ul li a {

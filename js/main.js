@@ -161,14 +161,9 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-    $(".two-menu").mouseover(function(){
-      $(".menu-vertical").css("opacity", "1");
-    });
-    $(".all-menu").mouseout(function(){
-      $(".menu-vertical").css("opacity", "0");
-    });
-  });
+$(".two-menu").click(function(){
+    $(".menu-vertical").toggleClass("open");
+});
 
 $(document).ready(mySlider);
 

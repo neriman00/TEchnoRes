@@ -151,10 +151,35 @@ Header
     }
     .menu-a{
         font-weight: 700;
+        position: relative;
+        .active{
+            background: #ffc107;
+            position: absolute;
+            height: 2px;
+            bottom: 0; 
+            left: 0;
+            width: 100%;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0; 
+            left: 0;
+            height: 2px;
+            transition: width .3s ;
+            background: #ffc107;
+            width: 0px;
+            
+
+        }
+        &:hover{
+            &::before{
+                width: 50%;
+            }
+        }
     }
-    .active-menu{
-        color:#ffc107 !important;
-    }
+    
     .header-yel{
         background:#ffc107;
     .two-menu{      
@@ -188,8 +213,7 @@ Header
             box-shadow:none;
         }
         .menu-vertical{
-            opacity:0;
-            
+            display:none;
             position: absolute;
             top: auto;
             left: 15px;
@@ -601,7 +625,7 @@ End of the Services
         float: right;
         padding: 15px 30px;
         font-weight: bold;
-        transition: ease .3s;
+        transition: transform .3s;
        &:hover{
         transform: translateY(-1px);
         box-shadow: 2px 5px 10px #111;
@@ -660,7 +684,7 @@ footer{
             padding: 0;
             li{
                 list-style: none;
-                transition: .3s;
+                transition:transform  .3s;
                 &:hover{
                     transform: translateX(2px);
                 }
