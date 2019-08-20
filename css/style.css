@@ -127,8 +127,7 @@ Header
   line-height: 45px; }
 
 .header-cart .icofont-cart:hover {
-  cursor: pointer;
-  box-shadow: 0 2px #aebcc3; }
+  cursor: pointer; }
 
 .header-cart .icofont-cart a:hover {
   text-decoration: none; }
@@ -228,6 +227,7 @@ Header
   display: block !important; }
 
 .drop-menu {
+  box-shadow: 2px 5px 10px #111;
   opacity: 0;
   visibility: hidden;
   padding: 27px 7px 27px 0;
@@ -237,8 +237,9 @@ Header
   width: 250px;
   border-radius: 10px;
   z-index: -1;
-  height: 370px;
   background-color: #fff; }
+  .drop-menu.drop-active {
+    display: block; }
   .drop-menu a {
     color: #000; }
     .drop-menu a:hover {
@@ -409,6 +410,7 @@ Category
 */
 .all-categ {
   width: 85%;
+  margin: auto;
   height: 275px;
   background-color: #939393;
   background-size: contain;
@@ -419,6 +421,9 @@ Category
     font-weight: bold; }
   .all-categ p {
     font-size: 20px; }
+
+.two-categ {
+  margin-top: 10px; }
 
 /*
 =============================
@@ -575,7 +580,15 @@ End of the Footer
     padding: 0px 9px; }
 
   .menu .navbar-inverse .navbar-nav > li {
-    padding: 0px 11px; } }
+    padding: 0px 11px; }
+
+  .categ-content h2 {
+    font-size: 28px; }
+  .categ-content p {
+    font-size: 20px; }
+
+  .all-categ {
+    margin-top: 10px; } }
 @media only screen and (max-width: 910px) {
   .top-header .top-right {
     text-align: center; }
@@ -585,7 +598,14 @@ End of the Footer
     text-align: center; }
 
   .slide-img {
-    height: 500px; } }
+    height: 500px; }
+
+  .categ-content h2 {
+    font-size: 28px; }
+  .categ-content p {
+    font-size: 20px; }
+  .categ-content .all-categ {
+    margin-top: 10px; } }
 @media only screen and (max-width: 768px) {
   .nav-tabs > li {
     float: none !important;
@@ -602,7 +622,37 @@ End of the Footer
     border-bottom: 1px solid #aebcc3; }
 
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #aebcc3; } }
+    border-color: #aebcc3; }
+
+  #slider-container {
+    max-height: 350px; }
+    #slider-container .slide-img {
+      object-fit: cover; }
+
+  .level-1 {
+    transition: none; }
+
+  .drop-menu {
+    position: static;
+    display: none;
+    background: none;
+    width: 100%;
+    box-shadow: none;
+    margin-top: 15px;
+    transition: none;
+    opacity: 1;
+    visibility: visible; }
+
+  .all-categ {
+    margin-top: 10px; }
+
+  .question {
+    margin-top: 20px; }
+
+  .categ-content h2 {
+    font-size: 25px; }
+  .categ-content p {
+    font-size: 18px; } }
 .owl-nav, .owl-dots {
   display: none; }
 

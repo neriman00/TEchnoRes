@@ -1,51 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 #Shop{
     margin: 50px 0;
 }
+.hr{
+    h1{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
 .ShopCategory{
-    background: #5c5a5a;
-    width: 400px;
-    border-radius: 40px; 
-.CategoryText{
-
-    i{
-
-        color:  #e7c14e;
-    }
-    h4{
-        text-align: center;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        padding: 20px 0;
-    }
-    h5{
-        text-align: center;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        padding: 10px 0;
+    background-color: #3e3d3d;
+    border: 10px solid #3e3d3d;
+    border-radius: 15px !important;
+    button{
+    font-family: 'Quicksand', sans-serif;
+   box-shadow: none;
+    outline: none;
 
     }
+}
+
+.accordion {
+    background-color: #3e3d3d;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: none;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #3e3d3d; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    color: white;
+    background-color: #585858ab;
+    overflow: hidden;
     a{
-        font-family: 'Quicksand', sans-serif;
-        margin-left: 10px;
-        text-decoration: none;
-        list-style: none;
         color: white;
-        &:hover{
-            color: #e7c14e;
-            transition:  .2s ease;
-        }
     }
-        li{
-            padding: 10px 0;
-        }
-}
-}
-
+    p{
+        border-left:3.5px solid #e7c14e;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+  }
 .shopImg{
     border:1px solid #e7c14e;
-    width: 200px;
-    min-height: 450px;
-    margin-left: 50px; 
+    
     background: white;
     .shop-img{
         width: 100%;
