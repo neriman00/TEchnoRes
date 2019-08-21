@@ -63,3 +63,6 @@
         color: #111;
     }
 }
+div[data-foldable-role="target"]{
+display: none;
+}

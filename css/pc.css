@@ -57,4 +57,7 @@
   .pc-name-text:hover {
     color: #111; }
 
+div[data-foldable-role="target"] {
+  display: none; }
+
 /*# sourceMappingURL=pc.css.map */
