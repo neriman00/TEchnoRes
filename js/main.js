@@ -9,6 +9,7 @@ $(".level-1").click(function(){
 
 
 
+
 function toggleIcon(e) {
     jQuery(e.target)
         .prev('.panel-heading')
@@ -296,6 +297,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
 
 
