@@ -303,7 +303,48 @@ Header
    
         }
     }
-    
+    .spanIcon{
+        display: none;
+        color: white;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
 /*
 =============================
 End of the Header
@@ -716,7 +757,7 @@ footer{
 End of the Footer
 =============================
 */
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1200px){
     .top-header .top-right ul li {
     padding: 0px 9px;
     }
@@ -737,18 +778,28 @@ End of the Footer
     }
 
 }
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 998px){
     .top-header .top-right
-    { text-align: center;
+    {
+    text-align: center;
     }
-    .top-header .top-left ul {
+    .two-menu{
+        span{
+            font-size: 12px;
+        }
+        i{
+            font-size: 12px;
+        }
+    }
+    .top-header .top-left ul 
+    {
     padding: 14px 0 6px;
     text-align: center;
     }
-.slide-img{
+    .slide-img{
     height: 500px;
-}
-.categ-content{
+    } 
+    .categ-content{
     h2{
         font-size:28px;
     }
@@ -801,7 +852,19 @@ margin-bottom: 4px!important;
     opacity: 1;
     visibility: visible;
    }
-
+   .two-menu{
+    span{
+        font-size: 17px;
+    }
+    i{
+        font-size: 17px;
+    }
+}
+   .top-right{
+       img{
+        width: 15px;
+       }
+   }
    .all-categ{
        margin-top: 10px;
    }
@@ -817,6 +880,12 @@ margin-bottom: 4px!important;
     }
 }
 
+.menu{
+    display: none;
+}
+.spanIcon{
+    display: block;
+}
 }
 .owl-nav,.owl-dots{
     display:none;

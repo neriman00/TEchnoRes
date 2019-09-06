@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/a5a64ef4c6.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shop.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
 
@@ -89,13 +89,38 @@
 
                     </div><!-- .site-header-menu -->
 
-
-                    <div class="col-sm-2 col-md-2 col-xs-12 hidden-sm">
-                        <div class="header-cart">
-                            <a href="#"><i class="fas fa-shopping-cart icofont-cart"></i></a>
-                            <div class="items"> 0 item(s)</div>
+                    <div class="col-sm-2 col-md-2 col-2 hidden-sm">
+                       
+                        <div class="row">
+                            <div class="">
+                              <button type="button" class="btn btn-warning" style="color:white" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                            </div>
                         </div>
+                 
+                    
+                </div>
+                <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="show-cart table">
+                            
+                          </table>
+                          <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Order now</button>
+                        </div>
+                      </div>
                     </div>
+                  </div> 
                 </div><!-- .row -->
             </div>
         </nav>
@@ -103,7 +128,7 @@
     <div class="header-yel mt-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-5 col-md-5 col-lg-3">
 
                     <div class="two-menu">
                         <a href="#">
@@ -241,7 +266,7 @@
                     </div>
                     <div class="all-menu"></div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-sm-7 col-md-7 col-lg-7">
                     <div class="input-group md-form form-sm form-2 pl-0 pt-2">
                         <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search"
                             aria-label="Search">
@@ -258,14 +283,15 @@
     <section id="Shop">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-6 col-sm-5 col-md-4 col-lg-3">
 
                     <div class="ShopCategory" data-aos="fade-right">
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-10 col-10">
                                     <a class="accordion" href="Shop.html"><span><i class="fas fa-tv"></i>&nbsp; &nbsp;
-                                            Komputerler</span></a>
+                                            Komputerler</span>
+                                    </a>
                                 </div>
                                 <div class="col-md-2 col-2"><i class="fas fa-angle-down accord-icon"></i></div>
                             </div>
@@ -367,144 +393,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9"  data-aos="fade-left">
+                
+    <!-- Main -->
+
+                
+                <div class="col-6 col-sm-7 col-md-8 col-lg-9"  data-aos="fade-left">
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="shopImg">
-                                <img class="shop-img" src="images/41gldik51pL._SX425_.jpg" alt="">
-                                <div class="img-text">
-                                    <span>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</span>
-                                    <p>25,00 AZN</p>
-                                    <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="shopImg">
                                 <img class="shop-img" src="images/41gldik51pL._SX425_.jpg" alt="">
                                 <div class="img-text">
                                     <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
                                     <p>25,00 AZN</p>
-                                    <button type="button" class="btn btn-warning">Sebete elave et</button>
+                                    <button type="button" class="btn btn-warning  add-to-cart">Sebete elave et</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="shopImg">
                                 <img class="shop-img" src="images/41gldik51pL._SX425_.jpg" alt="">
                                 <div class="img-text">
                                     <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
                                     <p>25,00 AZN</p>
-                                    <button type="button" class="btn btn-warning">Sebete elave et</button>
+                                    <button type="button"  class="btn btn-warning  add-to-cart">Sebete elave et</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="shopImg">
                                 <img class="shop-img" src="images/41gldik51pL._SX425_.jpg" alt="">
                                 <div class="img-text">
                                     <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
                                     <p>25,00 AZN</p>
-                                    <button type="button" class="btn btn-warning">Sebete elave et</button>
+                                    <button type="button" class="btn btn-warning add-to-cart">Sebete elave et</button>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-
-                    <div class="shopDiv mt-5">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shopDiv mt-5">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shopImg">
-                                    <img class="shop-img" width="200" height="200" src="images/41gldik51pL._SX425_.jpg"
-                                        alt="">
-                                    <div class="img-text">
-                                        <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
-                                        <p>25,00 AZN</p>
-                                        <button type="button" class="btn btn-warning">Sebete elave et</button>
-                                    </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="shopImg">
+                                <img class="shop-img" src="images/41gldik51pL._SX425_.jpg" alt="">
+                                <div class="img-text">
+                                    <h6>GIGABYTE B360M-DS3H (LGA1151/Intel/Micro ATX/USB 3.1)</h6>
+                                    <p>25,00 AZN</p>
+                                    <button type="button" class="btn btn-warning add-to-cart">Sebete elave et</button>
                                 </div>
                             </div>
                         </div>
